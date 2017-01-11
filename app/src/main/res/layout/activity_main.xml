@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.nikhilg.androidtesting.MainActivity">
+
+   <ListView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:id="@+id/listview"></ListView>
+
+   <FrameLayout
+       android:layout_below="@+id/listview"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+
+      <ImageView
+          android:src="@drawable/logo"
+          android:scaleType="fitCenter"
+          android:layout_height="250px"
+          android:layout_width="250px" />
+
+      <TextView
+          android:text="Frame Demo"
+          android:textSize="30px"
+          android:textStyle="bold"
+          android:layout_height="fill_parent"
+          android:layout_width="fill_parent"
+          android:gravity="center"/>
+   </FrameLayout>
+
+
+
+</RelativeLayout>
